@@ -5,3 +5,13 @@
 .compare :global(div) {
   touch-action: pan-y;
 }
+
+@media(max-width:930px){
+    .compare{
+        img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
