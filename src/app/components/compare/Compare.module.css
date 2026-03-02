@@ -1,3 +1,7 @@
 .compare {
   touch-action: pan-y;
 }
+
+.compare :global(div) {
+  touch-action: pan-y;
+}
