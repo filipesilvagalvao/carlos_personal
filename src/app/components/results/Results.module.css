@@ -39,3 +39,12 @@
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+@media(max-width:930px){
+    .results__container{
+        gap: 30px;
+    }
+    .results{
+        width: 80%;
+    }
+}
