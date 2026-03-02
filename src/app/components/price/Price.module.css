@@ -20,7 +20,7 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1.5;
-   text-align: center;
+    text-align: center;
 }
 
 .price__text {
@@ -37,31 +37,38 @@
     font-size: .8rem;
     font-style: italic;
     list-style: none;
-    width: min(300px,100%);
+    width: min(300px, 100%);
     margin: auto;
 
     li {
+        display: flex;
+        gap: 5px;
+        align-items: center;
 
-        &::before {
-            content: "🗸";
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: var(--main-color);
+            height: 20px;
+            width: 20px;
+            aspect-ratio: 1/1;
             border-radius: 50%;
-            margin-right: 5px;
-            padding: 0 5px;
-            font-size: 1rem;
         }
     }
 }
 
-.price__value{
+.price__value {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: var(--kanit-font);
-   span{
-    color: var(--main-color);
-   }
+
+    span {
+        color: var(--main-color);
+    }
 }
+
 .price__getService {
     position: relative;
     padding: 10px 20px;

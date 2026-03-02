@@ -11,9 +11,9 @@ function Services() {
                         <img src="/img/hipertrofia.jpg" alt="imagem de emagrecimento" />
                         <h2 className={styles.service__cardTitle}>Hipertrofia</h2>
                         <ul className={styles.service__list}>
-                            <li className={styles.service__item}>Ganho muscular</li>
-                            <li className={styles.service__item}>Treino progressivo</li>
-                            <li className={styles.service__item}>Estratégia de evolução</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Ganho muscular</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Treino progressivo</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Estratégia de evolução</li>
                         </ul>
                     </div>
                 </article>
@@ -23,9 +23,9 @@ function Services() {
                         
                         <h2 className={styles.service__cardTitle}>Emagrecimento</h2>
                         <ul className={styles.service__list}>
-                            <li className={styles.service__item}>Redução de gordura corporal</li>
-                            <li className={styles.service__item}>Treinos de alta queima</li>
-                            <li className={styles.service__item}>Acompanhamento contínuo</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Redução de gordura corporal</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Treinos de alta queima</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Acompanhamento contínuo</li>
                         </ul>
                         <img src="/img/emagracimento.jpg" alt="imagem de emagrecimento" />
                     </div>
@@ -36,9 +36,9 @@ function Services() {
                         <img src="/img/condicionamento-fisico.jpg" alt="imagem de emagrecimento" />
                         <h2 className={styles.service__cardTitle}>Condicionamento Físico</h2>
                         <ul className={styles.service__list}>
-                            <li className={styles.service__item}>Mais resistência</li>
-                            <li className={styles.service__item}>Mais disposição</li>
-                            <li className={styles.service__item}>Mais performance</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Mais resistência</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Mais disposição</li>
+                            <li className={styles.service__item}><i className="fa-solid fa-check"></i>Mais performance</li>
                         </ul>
                     </div>
                 </article>

@@ -19,7 +19,7 @@ function Price({title,description,benefits,price,time,cta}:PriceProps) {
 
                 <ul className={styles.price__list}>
                     {benefits.map((item, index)=>(
-                        <li key={index}>{item}</li>
+                        <li key={index}><i className="fa-solid fa-check"></i>{item}</li>
                     ))}
                 </ul>
             </div>

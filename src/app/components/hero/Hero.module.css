@@ -4,9 +4,6 @@
     justify-content:end;
     align-items: center;
     position: relative;
-}
-
-.hero__container {
     min-height: calc(100dvh - 93.76px);
 }
 
