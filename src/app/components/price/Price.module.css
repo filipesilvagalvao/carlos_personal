@@ -1,144 +1,89 @@
-.price {
+.cardContainer {
+    width: 300px;
+    height: 330px;
+    background: linear-gradient(to top right,
+            #5ac3f4,
+            #2f7cf8 40%,
+            #0d4baf 65%,
+            #0753c4 100%);
+    padding: 4px;
+    border-radius: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: min(350px, 95%);
-    min-height: 400px;
-    padding: 10px 0;
-    background: linear-gradient(360deg, #47474700 4%, #171717 30%);
-    border: 1px solid #01708ba8;
-    margin: auto;
-    clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0% 0%, 91% 0%);
-}
-
-
-
-.price__title,
-.price__text {
-    font-family: var(--kanit-font), sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.5;
-    text-align: center;
-}
-
-.price__text {
-    text-transform: inherit;
-    margin-bottom: 30px;
-}
-
-.price__list {
-    display: flex;
-    text-transform: uppercase;
-    letter-spacing: 1.1px;
-    flex-direction: column;
-    gap: 5px;
-    font-size: .8rem;
-    font-style: italic;
-    list-style: none;
-    width: min(300px, 100%);
-    margin: auto;
-
-    li {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-
-        i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--main-color);
-            height: 20px;
-            width: 20px;
-            aspect-ratio: 1/1;
-            border-radius: 50%;
-        }
-    }
-}
-
-.price__value {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: var(--kanit-font);
-
-    span {
-        color: var(--main-color);
-    }
-}
-
-.price__getService {
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 1px solid var(--border-color);
-    backdrop-filter: blur(10px);
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #fff;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-.price__getService:hover {
-    background: rgb(61, 106, 255);
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.price__getService:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-}
-
-.price__getService::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
+    filter: blur(15px);
     opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
+    transition: all 1s;
 }
 
-@keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
+.titleCard {
+    display: flex;
+    align-items: center;
+    padding: 16px 18px;
+    justify-content: space-between;
+    color: #fff;
+}
 
-    50% {
-        opacity: 1;
-    }
+.titleCard {
+    p {
 
-    to {
-        opacity: 0;
-        left: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: italic;
+        text-shadow: 2px 2px 6px #2975ee;
     }
 }
 
-.price__getService:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
+.description {
+    list-style: none;
+}
+
+.cardContent {
+    width: 100%;
+    height: 100%;
+    background-color: #161a20;
+    border-radius: 30px;
+    color: #838383;
+    font-size: 12px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.title {
+    font-weight: 600;
+    color: #bab9b9;
+}
+
+.plain :nth-child(1) {
+    font-size: 36px;
+    color: #fff;
+}
+
+.cardBtn {
+    background: linear-gradient(to top right,
+            #5ac3f4,
+            #2f7cf8 40%,
+            #0d4baf 65%,
+            #0753c4 100%);
+    padding: 8px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.cardBtn:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #fff;
+    transform: scale(1.03);
+}
+
+.cardBtn:active {
+    transform: scale(1);
 }

@@ -1,35 +1,46 @@
+"use client"
+import { useInView } from "react-intersection-observer"
 import styles from "./Price.module.css"
 
 type PriceProps = {
-    title:string,
-    description:"Ideal para testar e conhecer"|"Foco no início e consistência"|"Evolução e compromisso"|"Foco em longo prazo e alta performance",
-    benefits:string[],
-    price:string,
-    time?:string,
-    cta:string
+    title: string,
+    description: string,
+    benefits: string[],
+    price: string,
+    time?: string,
+    cta: string
 }
 
-function Price({title,description,benefits,price,time,cta}:PriceProps) {
-    return (
-        <article className={styles.price}>
-            
-            <div className={styles.price__content}>
-                <h3 className={styles.price__title}>{title}</h3>
-                <p className={styles.price__text}>{description}</p>
+function Price({ title, description, benefits, price, time, cta }: PriceProps) {
 
-                <ul className={styles.price__list}>
-                    {benefits.map((item, index)=>(
-                        <li key={index}><i className="fa-solid fa-check"></i>{item}</li>
+    const { ref, inView } = useInView()
+
+    const move = {
+        opacity: 1,
+        filter: "blur(0)"
+    }
+
+    return (
+        <div className={styles.cardContainer} ref={ref} style={inView?move:{}}>
+            <div className={styles.titleCard}>
+                <p>{title}</p>
+            </div>
+            <div className={styles.cardContent}>
+                <p className={styles.title}>{description}</p>
+                <p className={styles.plain}>
+                    <span>{price}</span>
+                    <span>{time}</span>
+                </p>
+                <ul className={styles.description}>
+                    {benefits.map((item, index) => (
+                        <li key={index}>
+                            <i className="fa-solid fa-check"></i> {item}
+                        </li>
                     ))}
                 </ul>
+                <button className={styles.cardBtn}>Quero este</button>
             </div>
-
-            <p className={styles.price__value}><span>{price}</span>{time}</p>
-            <a
-                href=""
-                className={styles.price__getService}
-            >{cta}</a>
-        </article>
+        </div>
     )
 }
 

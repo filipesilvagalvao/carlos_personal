@@ -27,3 +27,8 @@ a{
   text-decoration: none;
   color: var(--text-color-2);
 }
+
+.show{
+  background-color: red;
+}
+

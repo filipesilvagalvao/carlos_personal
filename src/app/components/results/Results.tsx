@@ -1,11 +1,19 @@
+"use client"
+import { useInView } from "react-intersection-observer"
 import Card_Result from "../card_result/Card_Result"
 import styles from "./Results.module.css"
 
 function Results() {
+  const { ref, inView } = useInView()
+
+  const move = {
+    opacity: 1,
+    filter: "blur(0)"
+  }
   return (
     <section className={styles.results} id="resultados">
       <h2 className={styles.results__title}><span>Resultados</span> dos treinos</h2>
-      <div className={styles.results__container}>
+      <div className={styles.results__container} ref={ref} style={inView? move:{}}>
         <Card_Result
           img1="/compare/musculacao-antes.png"
           img2="/compare/musculacao-depois.png"

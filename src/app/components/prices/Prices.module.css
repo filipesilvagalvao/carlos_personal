@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
 .prices__title {
     font-size: min(8rem, 8vw);
     font-style: italic;
@@ -20,7 +21,18 @@
 
 .prices__container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 80px;
     padding: 30px 0;
+}
+
+.prices__container > div:nth-child(3){
+
+    span:nth-child(1){
+        font-size: 1.7rem;
+        line-height: 55px;
+        text-wrap: nowrap;
+    }
 }
