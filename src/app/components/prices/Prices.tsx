@@ -4,7 +4,7 @@ import styles from "./Prices.module.css"
 function Prices() {
     return (
         <section className={styles.prices} id="precos">
-            <h2 className={styles.prices__title}>Nossos <span>Preços</span></h2>
+            <h2 className={styles.prices__title}>Comece <span>Hoje</span></h2>
             <div className={styles.prices__container}>
                 <Price
                     title="Consultoria online"
