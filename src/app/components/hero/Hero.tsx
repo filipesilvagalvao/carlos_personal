@@ -18,7 +18,7 @@ function Hero() {
                 <div className={styles.hero__cta}>
                     
                     <Cascate/>
-                    <a href="" className={styles.hero__getCustomer}>Solicitar Consultoria</a>
+                    <a href="https://wa.me/+553799297699?text=Ol%C3%A1%20Carlos!%20Tenho%20interesse%20nos%20treinos" target="_blank" className={styles.hero__getCustomer}>Começar agora!</a>
                 </div>
         
             </div>

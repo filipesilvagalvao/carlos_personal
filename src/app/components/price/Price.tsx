@@ -8,10 +8,11 @@ type PriceProps = {
     benefits: string[],
     price: string,
     time?: string,
-    cta: string
+    cta: string,
+    link:string
 }
 
-function Price({ title, description, benefits, price, time, cta }: PriceProps) {
+function Price({ title, description, benefits, price, time, cta,link }: PriceProps) {
 
     const { ref, inView } = useInView()
 
@@ -21,7 +22,7 @@ function Price({ title, description, benefits, price, time, cta }: PriceProps) {
     }
 
     return (
-        <div className={styles.cardContainer} ref={ref} style={inView?move:{}}>
+        <div className={styles.cardContainer} ref={ref} style={inView ? move : {}}>
             <div className={styles.titleCard}>
                 <p>{title}</p>
             </div>
@@ -38,7 +39,10 @@ function Price({ title, description, benefits, price, time, cta }: PriceProps) {
                         </li>
                     ))}
                 </ul>
-                <button className={styles.cardBtn}>Quero este</button>
+                <a
+                    href={link}
+                    target="_blank"
+                    className={styles.cardBtn}>{cta}</a>
             </div>
         </div>
     )

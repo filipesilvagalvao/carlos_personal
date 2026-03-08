@@ -12,6 +12,7 @@ function Prices() {
                     benefits={["Dicas de treino", "Ficha de treino", "Disponibilidade para tirar dúvidas"]}
                     price="R$40,00"
                     cta="Começar agora"
+                    link="https://wa.me/+553799297699?text=Ol%C3%A1%20Carlos!%20Tenho%20interesse%20em%20sua%20consultoria%20online"
                 />
 
                 <Price
@@ -20,6 +21,7 @@ function Prices() {
                     benefits={["Avaliação física", "Treino personalizado", "Acompanhamento presencial", "Disponibilidade para tirar dúvidas"]}
                     price="R$40,00"
                     cta="Começar agora"
+                    link="https://wa.me/+553799297699?text=Ol%C3%A1%20Carlos!%20Tenho%20interesse%20em%20sua%20aula"
                 />
                 
                 <Price
@@ -28,6 +30,7 @@ function Prices() {
                     benefits={["Horário flexível","Ficha de treino", "Disponibilidade para tirar dúvidas"]}
                     price="Consulte-nos"
                     cta="Começar agora"
+                    link="https://wa.me/+553799297699?text=Ol%C3%A1%20Carlos!%20Tenho%20interesse%20personalizar%20um%20plano"
                 />
             </div>
         </section>
