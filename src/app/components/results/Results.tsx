@@ -19,16 +19,16 @@ function Results() {
           img2="/compare/musculacao-depois.png"
           name="João Pedro"
           time="6 meses"
-          muscle="+5kg massa magra"
-          fat="-8% gordura"
+          muscle="+6kg massa magra"
+          fat="-7% gordura"
         />
         <Card_Result
           img1="/compare/emagrecer-antes.png"
           img2="/compare/emagrecer-depois.jpg"
           name="Bruna Rios"
           time="6 meses"
-          muscle="+5kg massa magra"
-          fat="-8% gordura"
+          muscle="+3kg massa magra"
+          fat="-21% gordura"
         />
       </div>
     </section>
