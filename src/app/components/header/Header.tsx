@@ -20,7 +20,8 @@ function Header() {
                     <a href="#treinos" className={styles.header__link}>Treinos</a>
                     <a href="#precos" className={styles.header__link}>Preços</a>
                     <a href="#feedbacks" className={styles.header__link}>Depoimentos</a>
-                    <a href="#resultados" className={styles.header__link}>Resultados</a>
+                    {/* <a href="#resultados" className={styles.header__link}>Resultados</a> */}
+                    <a href="#about" className={styles.header__link}>Sobre</a>
                     <a href="#faq" className={styles.header__link}>FAQ</a>
                 </nav>
             </div>
