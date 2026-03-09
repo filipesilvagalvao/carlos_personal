@@ -20,7 +20,7 @@ function Results() {
           name="João Pedro"
           time="6 meses"
           muscle="+6kg massa magra"
-          fat="-7% gordura"
+          fat="-8% gordura"
         />
         <Card_Result
           img1="/compare/emagrecer-antes.png"
