@@ -23,6 +23,7 @@ function Header() {
                     {/* <a href="#resultados" className={styles.header__link}>Resultados</a> */}
                     <a href="#about" className={styles.header__link}>Sobre</a>
                     <a href="#faq" className={styles.header__link}>FAQ</a>
+                    <a href="https://www.instagram.com/carlosoliverpersonal/" className={styles.header__social} target="_blank"><i className="fa-brands fa-instagram"></i></a>
                 </nav>
             </div>
 

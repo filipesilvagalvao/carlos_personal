@@ -1,0 +1,17 @@
+.footer{
+    background-color: var(--bg-color-3);
+    height: 120px;
+}
+
+.footer__container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__social{
+    font-size: 2rem;
+}

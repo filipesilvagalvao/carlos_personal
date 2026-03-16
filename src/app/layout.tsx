@@ -3,6 +3,7 @@ import { Kanit, Poppins, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/Header";
 import "@fortawesome/fontawesome-free/css/all.min.css"
+import Footer from "./components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Carlos Personal Trainer",
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
