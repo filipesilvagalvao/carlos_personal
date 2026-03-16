@@ -1,47 +1,69 @@
 import type { Person } from "./type_person"
 const persons: Person[] = [
     {
-        namePerson: "Mariana Souza",
-        photo: "/photo-persons/marina-souza.jpg",
-        alt: "foto de Mariana Souza",
-        coments: "Comecei a consultoria online com o Carlos e foi a melhor decisão que tomei. Mesmo à distância ele acompanha tudo de perto e sempre ajusta os treinos quando preciso. Já consegui ótimos resultados em pouco tempo!",
+        namePerson: "Alessandra Sousa",
+        photo: "/photo-persons/alessandra-sousa.png",
+        alt: "foto de alessandra souza",
+        coments: "Excelente profissional!!!",
         stars: 5
     },
     {
-        namePerson: "Rafael Oliveira",
-        photo: "/photo-persons/rafael-oliveira.png",
-        alt: "foto de Rafael Oliveira",
-        coments: "Treinar com o Carlos presencialmente mudou totalmente minha rotina. Ele corrige os exercícios, motiva e monta um treino específico para meu objetivo. Evoluí muito mais rápido do que treinando sozinho.",
+        namePerson: "Diego Campos",
+        photo: "/photo-persons/diego-campos.png",
+        alt: "foto de diego campos",
+        coments: "Ótimo profissional.O treinamento é bem elaborado e de fácil entendimento. Super recomendo com total segurança.",
         stars: 5
     },
     {
-        namePerson: "Juliana Martins",
-        photo: "/photo-persons/juliana-martins.jpg",
-        alt: "foto de juliana martins",
-        coments: "A consultoria online do Carlos é muito completa. Ele explica tudo com clareza e está sempre disponível para tirar dúvidas. Me sinto acompanhada mesmo treinando em outra cidade.",
+        namePerson: "Renato Teixeira",
+        photo: "/photo-persons/renato-teixeira.jpg",
+        alt: "foto de renato teixeira",
+        coments: "Carlos Henrique é um excelente personal trainer. Profissional muito preparado, com amplo conhecimento e treinos bem estruturados. Desde que comecei a treinar com ele, tenho alcançado ótimos resultados. Além da competência técnica, é uma pessoa educada, motivadora e realmente comprometida com a evolução dos alunos. Recomendo!",
         stars: 5
     },
     {
-        namePerson: "Lucas Fernandes",
-        photo: "/photo-persons/lucas-fernandes.png",
-        alt: "foto de Lucas Fernandes",
-        coments: "Eu fazia academia sem muito resultado, mas depois que comecei o acompanhamento com o Carlos tudo mudou. Os treinos ficaram mais organizados e meus resultados começaram a aparecer.",
+        namePerson: "Eliana Geralda",
+        photo: "/photo-persons/eliana-geraldo.jpg",
+        alt: "foto de Eliana Geralda",
+        coments: "Excelente profissional . Super recomendo",
         stars: 5
     },
     {
-        namePerson: "Jennifer",
-        photo: "/photo-persons/jennifer.png",
-        alt: "foto de Jennifer",
-        coments: "Além de ser um excelente profissional, o Carlos realmente se importa com a evolução dos alunos. O acompanhamento é constante e isso faz toda diferença na motivação.",
+        namePerson: "Denis Eduardo",
+        photo: "/photo-persons/denis-eduardo.png",
+        alt: "foto de maria eduarda",
+        coments: "Muito top",
         stars: 5
     },
     {
-        namePerson: "Diego Santos",
-        photo: "/photo-persons/diego-santos.png",
-        alt: "foto de Diego Santos",
-        coments: "Faço consultoria online com o Carlos e estou muito satisfeito. Os treinos são personalizados e ele sempre acompanha minha evolução",
+        namePerson: "Guilherme Aurélio",
+        photo: "/photo-persons/guilherme-aurelio.png",
+        alt: "foto de gulherme aurelio",
+        coments: "Profissional incrível. Pontual e dedicado: com certeza o melhor investimento que já fiz na minha saúde. Recomendo a todos!",
         stars: 5
-    }
+    },
+    {
+        namePerson: "Ana Paula Silva Reis",
+        photo: "/photo-persons/ana-paula-silva-reis.png",
+        alt: "foto de ana paula",
+        coments: "Super recomendo pessoa atencioso dedicado ótimo profissional.",
+        stars: 5
+    },
+    {
+        namePerson: "Nélia Garcia",
+        photo: "/photo-persons/nelia-garcia.jpg",
+        alt: "foto de nelia garcia",
+        coments: "Excelente profissional.",
+        stars: 5
+    },
+    {
+        namePerson: "Matheus Barcelos",
+        photo: "/photo-persons/matheus-barcelos.png",
+        alt: "foto de matheus barcelos",
+        coments: "Excelente profissional. Estou gostando bastante dos resultados, obtido nos treinos.",
+        stars: 5
+    },
+
 ]
 
 export default persons
